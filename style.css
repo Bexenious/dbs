@@ -1,0 +1,11 @@
+body {
+    background-color: #6DC0D5;
+}
+
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+a.nav-link{
+    font-size:115%;
+}
