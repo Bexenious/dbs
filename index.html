@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Drawing By Squares</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="navbar-menu">
-        <a href="#"><img src="web-icons/logo-icon1.svg" width="140" height="75" alt="drawing by squares logo image"></a>
-        <a href="#"><img src="web-icons/icontext.png" width="300" height="" class="d-none d-md-block" alt="squares logo text"></a>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-1 sticky-top shadow-sm">
+        <a href="#"><img src="web-icons/logo-icon1.svg" width="140" height="auto" alt="drawing by squares logo image"></a>
+        <a href="#"><img src="web-icons/logo-text.svg" width="300" height="auto" class="d-none d-md-block" alt="squares logo text"></a>
         <div class="d-block d-lg-none ml-auto">
             <a class="navbar-brand border rounded-lg px-2 pb-2" href="#">
                 <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile button">
@@ -66,12 +67,65 @@
         </div>
     </div>
 
-    <div class="container">
-        <h1 class="text-center display-4">Drawing By Squares</h1>
+    <div class="container pt-2">
+        <h1 class="text-center" id="welcoming-txt">Welcome to DBS game!</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="web-icons/logo-icon1.svg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Author</h5>
+                    <p>Description</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="web-icons/logo-icon1.svg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Author</h5>
+                    <p>Description</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="web-icons/logo-icon1.svg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Author</h5>
+                    <p>Description</p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">    
+        <div class="d-flex justify-content-between">
+            <div class="p-2">Forum last topic</div>
+                <div class="d-flex align-items-end flex-column">
+                    <div class="mb-auto p-2">Start game button</div>
+                    <div class="p-2">Rankborad</div>
+                </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
 </body>
 </html>

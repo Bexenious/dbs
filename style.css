@@ -8,6 +8,11 @@ body, html{
     margin:0;
 }
 
+.container{
+    height: 100%;
+    width:auto;
+}
+
 body {
     background-color: rgb(109, 192, 213);
 }
@@ -22,4 +27,18 @@ body {
 
 .navbar-light .navbar-toggler:focus { 
     outline: none; 
+}
+
+h1#welcoming-txt{
+    color:white;
+    font-size:3.5vw;
+}
+
+.navbar{
+    background: white;
+}
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.822);
+    transition: background 500ms;
+    color:white;
 }
