@@ -49,28 +49,31 @@
     </div>
 </nav>
 
-<div class="container" id="firscontainer">
-    <div class="row mt-lg-5 mt-3 align-items-center">
-        <div class="col-lg-3 col-12 order-2 order-lg-1 pt-lg">
-            <p><b>Thank you</b> for visiting Drawing by squares game site.</p>
-            <p>This page shows a detailed prototype of the <i>DBS</i> game.<b>Made for the purpose of studying.</b></p>
-            <p>The page is build with bootstrap 4.<br>All images and icons are drawn by page builder. <b>More info:</b></p>
-            <div>
-                <a class="btn btn-light" href="https://drive.google.com/drive/u/2/folders/1zouLWhXFoGDUvTTIt1AExzxeSYt3T2TN" role="button">Drive link</a>
-                <a class="btn btn-light" href="https://github.com/Bexenious/dbs" role="button">Github</a>
+<div class="container" id="container">
+    <div class="row mt-lg-5 mt-5">
+        <div class="col-lg-3 col-12 order-2 order-lg-1 mt-lg-0 mt-5" id="welcomingsection">
+            <div class="col justify-items-center my-4">
+                <h1>DBS GAME</h1>
+                <p><b>Thank you</b> for visiting Drawing By Squares game site.</p>
+                <p>This page shows a detailed prototype of the <i>DBS</i> game.<b>Made for the purpose of studying.</b></p>
+                <p>The page is build with bootstrap 4.<br>All images and icons are drawn by page builder. <b>More info:</b></p>
+                <div>
+                    <a class="btn btn-primary" href="https://drive.google.com/drive/u/2/folders/1zouLWhXFoGDUvTTIt1AExzxeSYt3T2TN" role="button">Drive link</a>
+                    <a class="btn btn-primary" href="https://github.com/Bexenious/dbs" role="button">Github</a>
+                </div>
             </div>
         </div>
         <div class="col-lg-9 col-12 order-1 order-lg-2">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img class="d-block w-100" src="web-icons/1previewart.png"alt="First slide">
+                    <img class="d-block w-100" src="web-icons/3previewart.png"alt="First slide">
                     </div>
                     <div class="carousel-item">
                     <img class="d-block w-100" src="web-icons/2previewart.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block w-100" src="web-icons/3previewart.png" alt="First slide">
+                    <img class="d-block w-100" src="web-icons/1previewart.png" alt="First slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -87,13 +90,88 @@
     </div>
 </div>
 
-<div class="container">    
-    <div class="d-flex justify-content-between">
-        <div class="p-2">Forum last topic</div>
-            <div class="d-flex align-items-end flex-column">
-                <div class="mb-auto p-2">Start game button</div>
-                <div class="p-2">Rankborad</div>
+<div class="container">
+    <hr>
+</div>
+
+<div class="container mb-4" id="container">    
+    <div class="row">
+        <div class="col-lg-6 col-12">
+            <div class="px-4 py-4 mt-4" id="table">
+                <h2>Forum trending topics</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><img src="web-icons/forum-icon.svg" width="50" height="50" alt="forumicon"></td>
+                            <td><b>Topic name:</b><br>FAQ for newbies</td>
+                            <td><b>Replies:</b><br>132</td>
+                            <td><b>Last replies:</b><br>01.05.2020</td>
+                        </tr>
+                        <tr>
+                            <td><img src="web-icons/forum-icon.svg" width="50" height="50" alt="forumicon"></td>
+                            <td><b>Topic name:</b><br>Saving your progress</td>
+                            <td><b>Replies:</b><br>78</td>
+                            <td><b>Last replies:</b><br>28.04.2020</td>
+                        </tr>
+                        <tr>
+                            <td><img src="web-icons/forum-icon.svg" width="50" height="50" alt="forumicon"></td>
+                            <td><b>Topic name:</b><br>Bugs/Errors/Crashes</td>
+                            <td><b>Replies:</b><br>56</td>
+                            <td><b>Last replies:</b><br>01.05.2020</td>
+                        </tr>
+                        <tr>
+                            <td><img src="web-icons/forum-icon.svg" width="50" height="50" alt="forumicon"></td>
+                            <td><b>Topic name:</b><br>Adding new schemes</td>
+                            <td><b>Replies:</b><br>23</td>
+                            <td><b>Last replies:</b><br>27.04.2020</td>
+                        </tr>
+                        <tr>
+                            <td><img src="web-icons/forum-icon.svg" width="50" height="50" alt="forumicon"></td>
+                            <td><b>Topic name:</b><br>Finding players</td>
+                            <td><b>Replies:</b><br>20</td>
+                            <td><b>Last replies:</b><br>24.04.2020</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div>
+                <button type="button" class="btn btn-primary btn-lg btn-block my-4">START GAME</button>
+            </div>
+            <div class="px-4 py-4" id="table">
+                <h2>Leader board</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><b>1 </b><img src="web-icons/leaderboard-icon.svg" width="50" height="50" alt="leaderboardicon"></td>
+                            <td><b>Username:</b><br>MistyLev</td>
+                            <td><b>Score:</b><br>1250</td>
+                        </tr>
+                        <tr>
+                            <td><b>2 </b><img src="web-icons/leaderboard-icon.svg" width="50" height="50" alt="leaderboardicon"></td>
+                            <td><b>Username:</b><br>Plankti</td>
+                            <td><b>Score:</b><br>955</td>
+                        </tr>
+                        <tr>
+                            <td><b>3 </b><img src="web-icons/leaderboard-icon.svg" width="50" height="50" alt="leaderboardicon"></td>
+                            <td><b>Username:</b><br>DarkShadow</td>
+                            <td><b>Score:</b><br>820</td>
+                        </tr>
+                        <tr>
+                            <td><b>4 </b><img src="web-icons/leaderboard-icon.svg" width="50" height="50" alt="leaderboardicon"></td>
+                            <td><b>Username:</b><br>Floppy</td>
+                            <td><b>Score:</b><br>800</td>
+                        </tr>
+                        <tr>
+                            <td><b>5 </b><img src="web-icons/leaderboard-icon.svg" width="50" height="50" alt="leaderboardicon"></td>
+                            <td><b>Username:</b><br>Skies</td>
+                            <td><b>Score:</b><br>650</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
