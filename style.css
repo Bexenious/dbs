@@ -1,12 +1,12 @@
-* {
-    font-family: 'Catamaran', sans-serif;
-}
-
 body, html{
     height: 100%;
     width:100%;
     margin:0;
 }
+
+html {
+    font-size: 1rem;
+}  
 
 .container{
     height: 100%;
@@ -29,21 +29,18 @@ body {
     outline: none; 
 }
 
-h1#welcoming-txt{
-    color:white;
-    font-size:3.5vw;
-}
-
 .navbar{
     background: white;
 }
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.822);
     transition: background 500ms;
-    color:white;
 }
 
-.carousel{
-    width: 80%;
-    margin: auto;
+h1{
+    color: white;
+}
+
+p{
+    color: white;
 }
