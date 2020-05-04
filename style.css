@@ -6,11 +6,6 @@ body, html{
 
 html {
     font-size: 1rem;
-}  
-
-.container{
-    height: 100%;
-    width:auto;
 }
 
 body {
@@ -37,10 +32,6 @@ body {
     transition: background 500ms;
 }
 
-h1{
-    color: white;
-}
-
-p{
-    color: white;
+div#firscontainer{
+    color:white;
 }
