@@ -32,10 +32,6 @@ body {
     transition: background 500ms;
 }
 
-div#welcomingsection{
-    color:white;
-}
-
 div#table{
     background-color: white;
 }
