@@ -1,1 +1,202 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Drawing By Squares</title>
+</head>
+<body>
+
+<nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-1 sticky-top shadow-sm">
+    <a href="index.html"><img src="web-icons/sitelogo.png" width="100" height="auto" alt="dbs-logo-image"></a>
+    <a href="index.html"><img src="web-icons/sitelogotext.png" width="300" height="auto" class="d-none d-md-block" alt="dbs-logo-text"></a>
+    <div class="d-block d-lg-none ml-auto">
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile-button">
+        </a>
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
+            <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout-button">
+        </a>
+        <button class="btn btn-primary px-2 pb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="web-icons/menu-icon.svg" width="25" height="25" alt="menu-button">
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ml-auto">
+                <a class="nav-link" href="game.html">START GAME</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="forum.html">FORUM</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="leaderboard.html">LEADER BOARD</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-none d-lg-block">
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile-button">
+        </a>
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
+            <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout-button">
+        </a>
+    </div>
+</nav>
+
+<div class="container py-3">
+    <a class="h4" href="Gallery.html">🡰 Gallery</a>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <img class="card-img-top" src="web-icons/1-preview.png" alt="preview-art">
+                <div class="card-body">
+                    <p class="card-text"> <b>Author:</b> Kadri<br> <b>Description:</b> Snowing yesterday and today.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-lg-flex d-row justify-content-start">
+            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Views: 43</button>
+            <button type="button" class="btn btn-secondary col-lg-4 col-12" disabled>Comments: 3</button>
+            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Likes: 20</button>
+        </div>
+        <div class="col-lg-6 d-lg-flex d-row justify-content-end">
+            <button type="button" class="btn btn-success col-lg-3 col-12" disabled>Upvote</button>
+            <button type="button" class="btn btn-danger col-lg-3 col-12" disabled>Downvote</button>
+            <button type="button" class="btn btn-primary col-lg-4 col-12" disabled>Like</button>
+        </div>
+    </div>
+</div>
+
+<div class="container py-3">
+    <table class="table table-responsive-md">
+        <thead>
+            <th scope="col"><p id="day"></p></th>
+            <th scope="col"><p>Gallery section / Gallery category / Art title</p></th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userKatie</th>
+                <td>Nicely done!
+                    <div>
+                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment1" aria-expanded="false" aria-controls="collapseExample">
+                            Reply
+                        </a>
+                        <div class="collapse" id="replyComment1">
+                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
+                            <small id="topicHelp" class="form-text text-muted">Reply to @userKatie.</small>
+                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
+                        </div>
+                    </div>
+                </td>
+                <td><i>02.05.2020 10:25</i></td>
+            </tr>
+            <tr>
+                <th scope="row">➥<br><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon" class="ml-5">
+                <br> <b class="ml-5">@userKadri</th>
+                <td>Thank you so much for ur feedback.
+                    <div>
+                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment2" aria-expanded="false" aria-controls="collapseExample">
+                            Reply
+                        </a>
+                        <div class="collapse" id="replyComment2">
+                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
+                            <small id="topicHelp" class="form-text text-muted">Reply to @userKadri.</small>
+                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
+                        </div>
+                    </div>
+                </td>
+                <td><i>02.05.2020 13:11</i></td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userMistyLev</th>
+                <td>I wish I could draw like you!
+                    <div>
+                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment3" aria-expanded="false" aria-controls="collapseExample">
+                            Reply
+                        </a>
+                        <div class="collapse" id="replyComment3">
+                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
+                            <small id="topicHelp" class="form-text text-muted">Reply to @userMistyLev.</small>
+                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
+                        </div>
+                    </div>
+                </td>
+                <td> <i>02.05.2020 15:25</i></td>
+            </tr>
+            <tr>
+                <th scope="row">Write comment:</th>
+                <td>
+                    <input type="topicName" class="form-control" aria-describedby="topicHelp">
+                    <button class="btn btn-primary mt-2" type="button">Send comment</button>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="logoutModalTitle">Log out from account</h5>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out from your account?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Log out</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalTitle">Log in</h5>
+            </div>
+            <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                        </div>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="registration.html">New around here? Sign up</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer font-small blue">
+    <div class="text-center py-3">2020 Tallinna Ülikool: Interaktsioonidisain</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="funct.js"></script>
+
+</body>
+</html>
