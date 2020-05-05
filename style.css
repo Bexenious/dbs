@@ -145,6 +145,6 @@ p{
     color:#2B4254 ;
 }
 
-a{
-    color:white;
+a:link { 
+    text-decoration: none;
 }
