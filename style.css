@@ -9,33 +9,113 @@ html {
 }
 
 body {
-    background-color: #6dc0d5;
+    background-color: #F5F7FA;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #63cee9;
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:white;
+    text-shadow: 2px 2px 6px #007bff;
 }
 
 .navbar-light .navbar-brand:hover { 
     box-shadow: 0px 0px 7px -2px #007bff;
 }
 
-.navbar-light .navbar-toggler:focus { 
-    outline: none; 
-}
-
 .navbar{
-    background: white;
+    background: #00B9FF;
 }
 .navbar.scrolled {
-    background: white;
+    background: rgba(0, 187, 255, 0.527);
     transition: background 500ms;
+}
+
+.btn-primary {
+	background:linear-gradient(to bottom, #00bbff 5%, #3076ab 100%);
+	background-color:#00bbff;
+	border-radius:6px;
+	border:1px solid #3f83b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.btn-primary:hover {
+	background:linear-gradient(to bottom, #3076ab 5%, #00bbff 100%);
+	background-color:#3076ab;
+}
+.btn-primary:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-danger {
+	box-shadow: 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #810e05;
+}
+.btn-danger:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.btn-danger:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-secondary {
+	box-shadow: 0px 1px 0px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:6px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.btn-secondary:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.btn-secondary:active {
+	position:relative;
+	top:1px;
 }
 
 div#table{
     background-color: white;
 }
 
-hr{
-    border-top: 1px solid white;
+p{
+    color:#2B4254 ;
 }
