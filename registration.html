@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>DBS gallery</title>
+    <title>DBS registration</title>
 </head>
 <body>
 
@@ -41,7 +41,7 @@
     </div>
     <div class="d-none d-lg-block">
         <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
-            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile-button">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="login-button">
         </a>
         <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
             <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout-button">
@@ -50,94 +50,39 @@
 </nav>
 
 <div class="container py-3">
-    <a class="h4" href="Gallery.html">Gallery</a>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <img class="card-img-top" src="web-icons/1-preview.png" alt="preview-art">
-                <div class="card-body">
-                    <p class="card-text"> <b>Author:</b> Kadri<br> <b>Description:</b> Snowing yesterday and today.</p>
+    <div class="row justify-content-center">
+        <div class="col col-lg-6 col-12">
+            <p class="h4">Registration form</p>
+            <form>
+                <div class="form-group">
+                    <label for="InputEmail">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="InputEmailHelp">
+                    <small id="InputEmailHelp" class="form-text text-muted">Write a valid email box.Since the key to activate the account will come to the email.</small>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-6 d-lg-flex d-row justify-content-start">
-            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Views: 43</button>
-            <button type="button" class="btn btn-secondary col-lg-4 col-12" disabled>Comments: 3</button>
-            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Likes: 20</button>
-        </div>
-        <div class="col-lg-6 d-lg-flex d-row justify-content-end">
-            <button type="button" class="btn btn-success col-lg-3 col-12" disabled>Upvote</button>
-            <button type="button" class="btn btn-danger col-lg-3 col-12" disabled>Downvote</button>
-            <button type="button" class="btn btn-primary col-lg-4 col-12" disabled>Like</button>
+                <div class="form-group">
+                        <label for="InputUsername">Username</label>
+                        <input type="username" class="form-control" id="InputUsername" aria-describedby="InputUsernameHelp">
+                        <small id="InputUsernameHelp" class="form-text text-muted">Choose wisely.Other users will identify you by username.</small>
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword1">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1" aria-describedby="InputPassword1Help">
+                    <small id="InputPassword1Help" class="form-text text-muted">Password must be more than 6 digits.</small>
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword2">Re-peat Password</label>
+                    <input type="password" class="form-control" id="InputPassword2"  aria-describedby="InputPassword2Help">
+                    <small id="InputPassword2Help" class="form-text text-muted">Passwords must match.</small>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree with blablabla etc.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <a href="index.html"  class="btn btn-danger">Discard</a>
+              </form>
         </div>
     </div>
-</div>
-
-<div class="container py-3">
-    <table class="table table-responsive-md">
-        <thead>
-            <th scope="col"><p id="day"></p></th>
-            <th scope="col"><p>Gallery section / Gallery category / Art title</p></th>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userKatie</th>
-                <td>Nicely done!
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment1" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment1">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userKatie.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td><i>02.05.2020 10:25</i></td>
-            </tr>
-            <tr>
-                <th scope="row">➥<br><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon" class="ml-5">
-                <br> <b class="ml-5">@userKadri</th>
-                <td>Thank you so much for ur feedback.
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment2" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment2">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userKadri.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td><i>02.05.2020 13:11</i></td>
-            </tr>
-            <tr>
-                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userMistyLev</th>
-                <td>I wish I could draw like you!
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment3" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment3">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userMistyLev.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td> <i>02.05.2020 15:25</i></td>
-            </tr>
-            <tr>
-                <th scope="row">Write comment:</th>
-                <td>
-                    <input type="topicName" class="form-control" aria-describedby="topicHelp">
-                    <button class="btn btn-primary mt-2" type="button">Send comment</button>
-                </td>
-            </tr>
-        </tbody>
-      </table>
 </div>
 
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog">

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>DBS gallery</title>
+    <title>DBS leader board</title>
 </head>
 <body>
 
@@ -41,7 +41,7 @@
     </div>
     <div class="d-none d-lg-block">
         <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
-            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile-button">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="login-button">
         </a>
         <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
             <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout-button">
@@ -50,94 +50,95 @@
 </nav>
 
 <div class="container py-3">
-    <a class="h4" href="Gallery.html">Gallery</a>
+    <p class="h4">Leader board</p>
+    <p>List of top players by total points</p>
     <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <img class="card-img-top" src="web-icons/1-preview.png" alt="preview-art">
-                <div class="card-body">
-                    <p class="card-text"> <b>Author:</b> Kadri<br> <b>Description:</b> Snowing yesterday and today.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 d-lg-flex d-row justify-content-start">
-            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Views: 43</button>
-            <button type="button" class="btn btn-secondary col-lg-4 col-12" disabled>Comments: 3</button>
-            <button type="button" class="btn btn-secondary col-lg-3 col-12" disabled>Likes: 20</button>
-        </div>
-        <div class="col-lg-6 d-lg-flex d-row justify-content-end">
-            <button type="button" class="btn btn-success col-lg-3 col-12" disabled>Upvote</button>
-            <button type="button" class="btn btn-danger col-lg-3 col-12" disabled>Downvote</button>
-            <button type="button" class="btn btn-primary col-lg-4 col-12" disabled>Like</button>
+        <div class="col col-12">
+            <table class="table table-responsive-md shadow-sm">
+                <thead>
+                    <tr class="table-light">
+                        <th scope="col">#</th>
+                        <th scope="col"></th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">User since</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <th scope="row">1</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userMistyLev</td>
+                        <td>1240</td>
+                        <td>12.03.2020</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">2</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userCat</td>
+                        <td>1201</td>
+                        <td>22.03.2020</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">3</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userSam</td>
+                        <td>1130</td>
+                        <td>02.03.2020</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">4</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userHarry</td>
+                        <td>1060</td>
+                        <td>13.01.2020</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">5</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userAnakin</td>
+                        <td>955</td>
+                        <td>02.01.2020</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">6</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userAlice</td>
+                        <td>925</td>
+                        <td>04.02.2020</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">7</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userPadme</td>
+                        <td>875</td>
+                        <td>23.01.2020</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">8</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userSteve</td>
+                        <td>850</td>
+                        <td>20.02.2020</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">9</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userMartin</td>
+                        <td>790</td>
+                        <td>02.05.2020</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">10</th> 
+                        <td><img src="web-icons/avatar-icon.png" width="50" height="50" alt="leaderboardicon"></td> 
+                        <td>@userSnake</td>
+                        <td>650</td>
+                        <td>01.04.2020</td>
+                    </tr>
+                </tbody>
+              </table>
         </div>
     </div>
-</div>
-
-<div class="container py-3">
-    <table class="table table-responsive-md">
-        <thead>
-            <th scope="col"><p id="day"></p></th>
-            <th scope="col"><p>Gallery section / Gallery category / Art title</p></th>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userKatie</th>
-                <td>Nicely done!
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment1" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment1">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userKatie.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td><i>02.05.2020 10:25</i></td>
-            </tr>
-            <tr>
-                <th scope="row">➥<br><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon" class="ml-5">
-                <br> <b class="ml-5">@userKadri</th>
-                <td>Thank you so much for ur feedback.
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment2" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment2">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userKadri.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td><i>02.05.2020 13:11</i></td>
-            </tr>
-            <tr>
-                <th scope="row"><img src="web-icons/avatar-icon.png" width="100" height="100" alt="forumicon"><br>@userMistyLev</th>
-                <td>I wish I could draw like you!
-                    <div>
-                        <a type="button" href="#" data-toggle="collapse" data-target="#replyComment3" aria-expanded="false" aria-controls="collapseExample">
-                            Reply
-                        </a>
-                        <div class="collapse" id="replyComment3">
-                            <input type="topicName" class="form-control" id="topicName" aria-describedby="topicHelp">
-                            <small id="topicHelp" class="form-text text-muted">Reply to @userMistyLev.</small>
-                            <button class="btn btn-secondary mt-2" type="button">Reply</button>
-                        </div>
-                    </div>
-                </td>
-                <td> <i>02.05.2020 15:25</i></td>
-            </tr>
-            <tr>
-                <th scope="row">Write comment:</th>
-                <td>
-                    <input type="topicName" class="form-control" aria-describedby="topicHelp">
-                    <button class="btn btn-primary mt-2" type="button">Send comment</button>
-                </td>
-            </tr>
-        </tbody>
-      </table>
 </div>
 
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog">
