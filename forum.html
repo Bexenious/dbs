@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>DBS forum</title>
+</head>
+<body>
+
+<nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-1 sticky-top shadow-sm">
+    <a href="index.html"><img src="web-icons/sitelogo.png" width="100" height="auto" alt="drawing by squares logo image"></a>
+    <a href="index.html"><img src="web-icons/sitelogotext.png" width="300" height="auto" class="d-none d-md-block" alt="squares logo text"></a>
+    <div class="d-block d-lg-none ml-auto">
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile button">
+        </a>
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
+            <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout button">
+        </a>
+        <button class="btn btn-primary px-2 pb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="web-icons/menu-icon.svg" width="25" height="25" alt="logout button">
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ml-auto">
+                <a class="nav-link" href="#">START GAME</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="forum.html">FORUM</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="#">LEADER BOARD</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-none d-lg-block">
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#loginModal">
+            <img src="web-icons/login-icon.svg" width="25" height="25" alt="profile button">
+        </a>
+        <a class="btn btn-primary px-2 pb-2" data-toggle="modal" data-target="#logoutModal">
+            <img src="web-icons/logout-icon.svg" width="25" height="25" alt="logout button">
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+    <nav class="navbar navbar-light bg-white d-block">
+        <form class="form-inline d-flex justify-content-end">
+            <button class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="submit">filter</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="submit">categorize</button>
+            <input class="form-control col-3 col-xl-0 mx-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn btn-success my-2 my-sm-0 mx-1" type="submit">Search</button>
+        </form>
+      </nav>
+</div>
+
+<div class="container mt-3">
+    <h1>Popular topics</h1>
+    <p>Trending this week</p>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <tbody>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>FAQ for newbies</td>
+                        <td><b>Replies:</b><br>132</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Saving your progress</td>
+                        <td><b>Replies:</b><br>78</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>28.04.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Bugs/Errors/Crashes</td>
+                        <td><b>Replies:</b><br>56</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Adding new schemes</td>
+                        <td><b>Replies:</b><br>23</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>27.04.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Finding players</td>
+                        <td><b>Replies:</b><br>20</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>24.04.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h1>Other topics</h1>
+    <p>Recently added</p>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <tbody>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>How to change theme</td>
+                        <td><b>Replies:</b><br>74</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Adding friend error</td>
+                        <td><b>Replies:</b><br>67</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Where to begin</td>
+                        <td><b>Replies:</b><br>52</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Tutorial for noobs</td>
+                        <td><b>Replies:</b><br>26</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td><img src="web-icons/forum-icon.png" width="50" height="50" alt="forumicon"></td>
+                        <td><b>Topic name:</b><br>Helping advices</td>
+                        <td><b>Replies:</b><br>21</td>
+                        <td class="d-none d-lg-block"><b>Last replies:</b><br>01.05.2020</td>
+                        <td><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Read more</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Log out from account</h5>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out from your account?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Log out</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                    </div>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">New around here? Sign up</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer font-small blue">
+    <div class="text-center py-3">2020 Tallinna Ülikool: Interaktsioonidisain</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="funct.js"></script>
+
+</body>
+</html>
